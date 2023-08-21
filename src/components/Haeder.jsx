@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <header>
-          <Link to ="/" className="haeder-content">
+          <div className="haeder-content">
             <img src={logo} alt="Logo de Kasa"/>
-        </Link>
-        {/* <nav>
-            <link to="/">Accueil</link>
-            <link to="../pages/About">A Propos</link>
-        </nav> */}
-        
+       
+        <nav>
+            <Link to="/">Accueil</Link>
+            <Link to="../pages/About">A Propos</Link>
+        </nav>
+         </div>
         </header>
         
 

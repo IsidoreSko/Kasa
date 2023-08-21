@@ -1,23 +1,21 @@
-// import React from "react";
-// import Header from "../components/Haeder";
-// import Footer from "../components/Footer";
+import React from "react";
 // import { Link } from "react-router-dom";
-// import imgBannerAbout from "../assets/imgBannerAbout.png"
+import imgBannerAbout from "../assets/imgBannerAbout.png"
 
 
-// function About () {
-//     return (
+function About () {
+    return (
         
-//         <div>
-//             <Header/>
-//             <Link to="/" className="footer-content" >
-//             <img src={imgBannerAbout} alt="" ></img>
-//         </Link>
-//             <Footer/>
-//         </div>
+        <div>
+           
+            <div className="footer-content" >
+            <img src={imgBannerAbout} alt="Vallée entourée de montagnes" ></img>
+        </div>
             
+        </div>      
         
-//     )
-// }
+    )
+}
 
-// export default About
+export default About
+
