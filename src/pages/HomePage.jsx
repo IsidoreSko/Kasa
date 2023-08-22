@@ -9,8 +9,9 @@ function HomePage () {
         
         <div>
            
-            <div className="footer-content" >
+            <div className="img-banner-home-page">
             <img src={imgBannerHomePage} alt="Littoral rocheux" ></img>
+            <p className="tag">Chez vous, partout et ailleurs</p>
             </div>
             
         </div>

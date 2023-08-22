@@ -1,5 +1,11 @@
-@import "./layout/footer";
-@import "./layout/header";
+@import "./components/footer";
+@import "./components/header";
+
+@import "./layout/homePage";
+@import "./layout/about";
+@import "./layout/error";
+
+@import "./utils/variables";
 
 
 

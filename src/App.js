@@ -11,17 +11,23 @@ import Housings from "./pages/Housings";
 function App() {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
+      <div>
+        <Header />
+      </div>
+      <body>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
 
-        <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
 
-        <Route path="*" element={<Error />} />
+          <Route path="*" element={<Error />} />
 
-        <Route path="/housings" element={<Housings />} />
-      </Routes>
-      <Footer />
+          <Route path="/housings" element={<Housings />} />
+        </Routes>
+      </body>
+      <div>
+        <Footer />
+      </div>
     </Router>
   );
 }

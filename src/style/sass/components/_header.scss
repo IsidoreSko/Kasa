@@ -1,0 +1,23 @@
+@import "../utils/variables";
+
+.haeder-content {
+    height: 68px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 57px;
+        .link {
+           @include font-family;
+            font-size: 24px;
+            text-decoration: none;
+            color: $color-red;
+            margin: 0;
+        }
+    }
+}
