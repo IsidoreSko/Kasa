@@ -1,0 +1,43 @@
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1240px;  
+    padding: 30px;
+    margin: 30px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    
+& .card {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    margin: 31px;
+    & .cards-cover {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    opacity: 0.7;
+    object-fit: cover;
+    }
+    & .cards-title {
+    @include font-family;
+    font-size: 18px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: -50px;
+    margin-left: 15px;
+    }
+    & .link {
+         text-decoration: none;
+         margin: 0px;
+    }
+}
+
+
+
+}

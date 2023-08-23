@@ -1,7 +1,8 @@
 import React from "react";
-
 // import { Link } from "react-router-dom";
-import imgBannerHomePage from "../assets/imgBannerHomePage.png"
+import imgBannerHomePage from "../assets/imgBannerHomePage.png";
+import Cards from "../components/Cards";
+
 
 
 function HomePage () {
@@ -13,8 +14,9 @@ function HomePage () {
             <img src={imgBannerHomePage} alt="Littoral rocheux" ></img>
             <p className="tag">Chez vous, partout et ailleurs</p>
             </div>
-            
-        </div>
+                <Cards/>
+            </div>
+       
             
         
     )
