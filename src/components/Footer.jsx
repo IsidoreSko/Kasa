@@ -1,6 +1,5 @@
 import React from "react";
 import logoFooter from "../assets/logoKasaFooter.png";
-// import { Link } from "react-router-dom";
 
 
 function Footer() {
