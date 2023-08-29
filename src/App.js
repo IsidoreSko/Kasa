@@ -19,9 +19,9 @@ function App() {
 
           <Route path="/about" element={<About />} />
 
-          <Route path="*" element={<Error />} />
-
           <Route path="/housings/:id" element={<Housings />} />
+
+          <Route path="*" element={<Error />} />
         </Routes>
       </div>
       <div>

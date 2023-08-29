@@ -1,0 +1,24 @@
+@import "../utils/variables";
+
+
+.error404 {
+    @include img-text-center;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.error-message {
+    color: $color-red;
+    @include font-family;
+    font-size: 36px;
+    @include img-text-center;
+}
+
+.link {
+    @include font-family;
+    font-size: 18px;
+    @include img-text-center;
+    color: $color-red;
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
