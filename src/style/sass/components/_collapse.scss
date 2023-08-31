@@ -1,13 +1,11 @@
+.collapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 
-
-.collapse{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-
-    & .not-open {
+  & .not-open {
     width: 1023px;
     height: 52px;
     background-color: $color-red;
@@ -17,59 +15,73 @@
     align-items: center;
     margin-top: 50px;
     border-radius: 5px;
-    }
-    & .collapse-title {
-        @include font-family;
-        font-size: 24px;
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        margin-left: 10px;
-    }
-    & .collapse-arrow {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: lighter;
-        width: 35px;
-        height: 28px;
-        margin-right: 10px;
-        cursor: pointer;
-        transition: 0.6s ease-in-out;
-    }
-    & .arrow-up {
-        transform: rotate(0deg);
-    }
-    & .arrow-down {
-        transform: rotate(-180deg);
-    }
-    & .collapse-text-container{
-        background-color:  #F6F6F6;
-        width: 993px;
-        height: auto;
-        padding: 15px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        animation: openContainer 0.6s ease-in-out ;
-        transform-origin:top;
+  }
+  & .collapse-title {
+    @include font-family;
+    font-size: 24px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+  }
+  & .collapse-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    width: 35px;
+    height: 28px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+  }
+  & .arrow-up {
+    transform: rotate(0deg);
+  }
+  & .arrow-down {
+    transform: rotate(-180deg);
+  }
+  & .collapse-text-container {
+    background-color: #f6f6f6;
+    width: 993px;
+    height: auto;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
     & .collapse-text {
-        color: $color-red;
-        @include font-family;
-        font-size: 20px;
-        line-height: 30px;
-        margin: 0px;
-    }
-}
-}
-  
-@keyframes openContainer {
-    0% {
-      transform: scaleY(0);
-    }
-    100% {
-      transform: scaleY(1);
+      color: $color-red;
+      @include font-family;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0px;
     }
   }
+}
 
+.open-collapse {
+  animation: openContainer 0.6s ease-in-out;
+  transform-origin: top;
+}
 
+.close-collapse {
+  animation: closeContainer 0.6s ease-in-out;
+  transform-origin: bottom;
+}
 
+@keyframes openContainer {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes closeContainer {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}

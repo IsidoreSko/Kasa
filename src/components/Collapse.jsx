@@ -19,14 +19,30 @@ function Collapses({ content, title }) {
           />
         </div>
       </div>
-
+      {/* {show && (
+        <div className="collapse-text-container open-collapse">
+          <p className="collapse-text ">{content}</p>
+        </div>
+      )} */}
       {show && (
-        <div className="collapse-text-container">
-          <p className="collapse-text ">{content}</p>{" "}
+        <div
+          className={
+            show === true
+              ? "collapse-text-container open-collapse"
+              : "collapse-text-container close-collapse"
+          }
+        >
+          <p className="collapse-text ">{content}</p>
         </div>
       )}
+
+      {/* {(!show)(
+        <div className="collapse-text-container close-collapse">
+          <p className="collapse-text ">{content}</p>
+        </div>
+      )} */}
     </div>
   );
 }
-
+//
 export default Collapses;

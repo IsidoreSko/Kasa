@@ -1,0 +1,36 @@
+.card {
+  width: 340px;
+  height: 340px;
+  margin: 40px;
+}
+.card-cover {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-title {
+  height: 20px;
+  @include font-family;
+  font-size: 18px;
+  color: white;
+  margin: 0px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  position: relative;
+  top: -345px;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 282px;
+  padding-bottom: 40px;
+}
+
+.link-card {
+  display: block;
+  width: 340px;
+  height: 340px;
+  text-decoration: none;
+}

@@ -1,8 +1,7 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import imgBannerHomePage from "../assets/images/imgBannerHomePage.png";
-import Cards from "../components/Cards";
-// import { useEffect } from "react";
+import dataHousings from "../assets/data/housingListings.json";
+import Card from "../components/Card";
 
 function HomePage() {
   return (
@@ -11,7 +10,13 @@ function HomePage() {
         <img src={imgBannerHomePage} alt="Littoral rocheux"></img>
         <p className="tag">Chez vous, partout et ailleurs</p>
       </div>
-      <Cards />
+      <section className="cards-container">
+        {dataHousings.map((dataHousing) => (
+          <div key={dataHousing.id}>
+            <Card dataHousing={dataHousing} />
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

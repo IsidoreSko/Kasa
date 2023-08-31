@@ -13,3 +13,13 @@
         color: #FFFF;
     }
 }
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1220px;
+    padding: 30px;
+    margin: 30px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+  }

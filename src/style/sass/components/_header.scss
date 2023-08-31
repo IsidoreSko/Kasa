@@ -11,13 +11,16 @@
     nav {
         display: flex;
         flex-direction: row;
-        gap: 57px;
+        width: 330px;
         .link {
            @include font-family;
             font-size: 24px;
             text-decoration: none;
             color: $color-red;
             margin: 0;
+        }
+        .selected {
+            text-decoration: underline;
         }
     }
 }
