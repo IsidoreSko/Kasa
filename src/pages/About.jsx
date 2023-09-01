@@ -31,7 +31,7 @@ function About() {
       <div className="img-banner-about">
         <img src={imgBannerAbout} alt="Vallée entourée de montagnes"></img>
       </div>
-      <section className="collapse">
+      <section className="collapse-container">
         {aboutDatas.map((aboutData) => (
           <Collapses
             key={aboutData.title}

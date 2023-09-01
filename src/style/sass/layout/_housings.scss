@@ -1,2 +1,65 @@
+.housingDescription {
+  @include font-family;
+  color: $color-red;
+  & .decription-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  & .title-names {
+    font-size: 36px;
+  }
+  & .subtitle-names {
+    font-size: 18px;
+  }
+  & .owner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 167px;
+  }
+  & .owner-name {
+    font-size: 18px;
+    line-height: 25.7px;
+    text-align: right;
+    margin-right: 10px;
+    word-wrap: break-word;
+  }
+  & .owner-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  & .tags-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  & .tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    & .tags-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 115px;
+      height: 25px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 10px;
+      background: $color-red;
+      color: white;
+    }
+  }
+}
 
-
+li {
+  list-style-type: none;
+}

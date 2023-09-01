@@ -6,8 +6,8 @@ function Collapses({ content, title }) {
   const [show, setShow] = useState(false);
 
   return (
-    <div key={title}>
-      <div className="not-open ">
+    <div key={title} className="collapse">
+      <div className="not-open not-open-housing">
         <h2 className="collapse-title">{title}</h2>
         <div onClick={() => setShow(!show)}>
           <img
