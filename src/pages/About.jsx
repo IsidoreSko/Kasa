@@ -1,6 +1,8 @@
 import React from "react";
 import imgBannerAbout from "../assets/images/imgBannerAbout.png";
+
 import Collapses from "../components/Collapse";
+import Banner from "../components/Banner";
 
 function About() {
   const aboutDatas = [
@@ -28,9 +30,7 @@ function About() {
 
   return (
     <div>
-      <div className="img-banner-about">
-        <img src={imgBannerAbout} alt="Vallée entourée de montagnes"></img>
-      </div>
+      <Banner picture={imgBannerAbout} title="" className="banner" />
       <section className="collapse-container">
         {aboutDatas.map((aboutData) => (
           <Collapses

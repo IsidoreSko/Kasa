@@ -1,25 +1,21 @@
 @import "../utils/variables";
 
-.img-banner-home-page {
-    @include img-text-center;
-    img {
-        border-radius: 25px;
-        filter: brightness(70%);
-    }
-    .tag {
-        position: absolute;
-        @include font-family;
-        font-size: 48px;
-        color: #FFFF;
-    }
-}
-
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 1220px;
-    padding: 30px;
-    margin: 30px;
-    background-color: #f6f6f6;
-    border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1220px;
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    margin: 0px;
+    padding-top: 30px;
   }
+}

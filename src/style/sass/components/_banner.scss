@@ -1,0 +1,30 @@
+.banner {
+  @include img-text-center;
+  @media (max-width: 450px) {
+    height: 121px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  img {
+    border-radius: 25px;
+    filter: brightness(70%);
+    @media (max-width: 450px) {
+      width: 95%;
+      height: 100%;
+      border-radius: 10px;
+      margin: auto;
+    }
+  }
+  .tag {
+    position: absolute;
+    @include font-family;
+    font-size: 48px;
+    color: #ffff;
+    @media (max-width: 450px) {
+      font-size: 24px;
+      word-wrap: break-word;
+      width: 50%;
+      margin-left: 20px;
+    }
+  }
+}
