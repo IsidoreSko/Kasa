@@ -14,9 +14,7 @@ function HomePage() {
       />
       <section className="cards-container">
         {dataHousings.map((dataHousing) => (
-          <div key={dataHousing.id}>
-            <Card dataHousing={dataHousing} />
-          </div>
+          <Card dataHousing={dataHousing} key={dataHousing.id} />
         ))}
       </section>
     </div>

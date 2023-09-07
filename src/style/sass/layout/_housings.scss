@@ -1,25 +1,72 @@
 .housingDescription {
+  width: 100%;
   @include font-family;
   color: $color-red;
+  @media (max-width: 450px) {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   & .decription-name {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    @media (max-width: 450px) {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      padding: 10px;
+      padding-bottom: 0px;
+    }
+  }
+  & .names {
+    @media (max-width: 450px) {
+      width: 100%;
+    }
   }
   & .title-names {
     font-size: 36px;
+    @media (max-width: 770px) {
+      font-size: 22px;
+    }
+    @media (max-width: 450px) {
+      font-size: 18px;
+      line-height: 25.7px;
+    }
   }
   & .subtitle-names {
     font-size: 18px;
+    @media (max-width: 770px) {
+      font-size: 12px;
+    }
+    @media (max-width: 450px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
   & .owner {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 167px;
+    @media (max-width: 770px) {
+      width: 127px;
+    }
+    @media (max-width: 450px) {
+      width: 90px;
+      position: absolute;
+      left: 320px;
+      top: 510px;
+    }
+    @media (max-width: 415px) {
+      width: 90px;
+      position: absolute;
+      left: 240px;
+      // top: 480px;
+    }
   }
   & .owner-name {
     font-size: 18px;
@@ -27,38 +74,123 @@
     text-align: right;
     margin-right: 10px;
     word-wrap: break-word;
+    @media (max-width: 770px) {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 20px;
+    }
+    @media (max-width: 450px) {
+      font-size: 12px;
+      line-height: 17px;
+    }
   }
   & .owner-picture {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-  }
-  & .tags-rating {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 30px;
-  }
-  & .tags {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    & .tags-text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 115px;
-      height: 25px;
-      padding-left: 5px;
-      padding-right: 5px;
-      border-radius: 10px;
-      background: $color-red;
-      color: white;
+    @media (max-width: 770px) {
+      width: 48px;
+      height: 48px;
+    }
+    @media (max-width: 450px) {
+      width: 32px;
+      height: 32px;
     }
   }
-  & li {
-    list-style-type: none;
+}
+.tags-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  @media (max-width: 770px) {
+    flex-direction: column;
+  }
+  @media (max-width: 450px) {
+  }
+}
+.rating {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 50px;
+  @media (max-width: 770px) {
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  @media (max-width: 450px) {
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
+ul {
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  @media (max-width: 450px) {
+    padding: 0px;
+    margin-left: 10px;
+  }
+  & .tags-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 135px;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    background: $color-red;
+    color: white;
+    @media (max-width: 770px) {
+      font-size: 12px;
+      min-width: 110px;
+    }
+    @media (max-width: 450px) {
+      font-size: 10px;
+      min-width: 90px;
+      height: 20px;
+    }
+  }
+}
+li {
+  list-style-type: none;
+}
+
+.star {
+  @media (max-width: 770px) {
+    width: 20px;
+    height: 20px;
+  }
+  @media (max-width: 450px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.tags-container {
+  @media (max-width: 770px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  @media (max-width: 450px) {
+    margin-left: 0px;
+    margin-top: 0px;
+    justify-content: flex-start;
   }
 }

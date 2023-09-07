@@ -1,15 +1,18 @@
 @import "../utils/variables";
 
 .cards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 1220px;
-  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  padding: 2%;
   margin: auto;
   margin-bottom: 40px;
   margin-top: 40px;
   background-color: #f6f6f6;
   border-radius: 25px;
+  @media (max-width: 1024px) {
+  }
   @media (max-width: 450px) {
     display: flex;
     flex-direction: column;

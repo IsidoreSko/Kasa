@@ -26,7 +26,7 @@ function Carousel({ slides, slidesId }) {
             <img key={index} src={slides[slideVu]} alt={slidesId}></img>
           ))}
         </div>
-        {length >= 0 && (
+        {length > 1 && (
           <div>
             <img
               src={arrowRight}
@@ -39,7 +39,7 @@ function Carousel({ slides, slidesId }) {
               alt="Précédente"
               className="arrowLeft"
               onClick={previous}
-            />{" "}
+            />
             <div className="counter">
               {slideVu + 1}/{length}
             </div>

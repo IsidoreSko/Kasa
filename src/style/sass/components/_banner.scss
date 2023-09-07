@@ -1,5 +1,9 @@
 .banner {
   @include img-text-center;
+  width: 100%;
+  @media (max-width: 770px) {
+    height: 118px;
+  }
   @media (max-width: 450px) {
     height: 121px;
     display: flex;
@@ -8,6 +12,10 @@
   img {
     border-radius: 25px;
     filter: brightness(70%);
+    width: 93%;
+    @media (max-width: 770px) {
+      border-radius: 15px;
+    }
     @media (max-width: 450px) {
       width: 95%;
       height: 100%;
@@ -20,6 +28,9 @@
     @include font-family;
     font-size: 48px;
     color: #ffff;
+    @media (max-width: 770px) {
+      font-size: 30px;
+    }
     @media (max-width: 450px) {
       font-size: 24px;
       word-wrap: break-word;
@@ -27,4 +38,8 @@
       margin-left: 20px;
     }
   }
+}
+
+.banner-about img {
+  filter: none;
 }

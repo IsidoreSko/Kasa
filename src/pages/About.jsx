@@ -30,7 +30,11 @@ function About() {
 
   return (
     <div>
-      <Banner picture={imgBannerAbout} title="" className="banner" />
+      <Banner
+        picture={imgBannerAbout}
+        title=""
+        className="banner banner-about"
+      />
       <section className="collapse-container">
         {aboutDatas.map((aboutData) => (
           <Collapses
