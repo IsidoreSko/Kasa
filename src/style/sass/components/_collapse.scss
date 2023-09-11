@@ -1,3 +1,5 @@
+// Au sujet des collapses en général et de la page "About" en particulier:::::::::::::::
+
 .collapse {
   width: 80%;
   display: flex;
@@ -67,6 +69,7 @@
       font-size: 20px;
       line-height: 30px;
       margin: 0px;
+      text-align: justify;
       @media (max-width: 770px) {
         font-size: 16px;
         line-height: 22px;
@@ -85,7 +88,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  @media (max-width: 770px) {
+    margin-top: 30px;
+  }
 }
+
+// Particularités oncernant les collapses des pages "Housing"::::::::::::::::::::::::::
 
 .collapse-housing {
   display: flex;
@@ -132,14 +140,35 @@
   }
 }
 
+// Concernant les animations d'ouverture et de fermeture des collapses::::::::::::::::::
+
 .open-collapse {
-  animation: openContainer 0.6s ease-in-out;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  animation: openContainer 0.9s ease-in-out;
   transform-origin: top;
 }
 
 .close-collapse {
-  animation: closeContainer 0.6s ease-in-out;
-  transform-origin: bottom;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  animation: closeContainer 1.5s ease-in-out;
+  transform-origin: top;
+}
+
+@keyframes closeContainer {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+    height: auto;
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    height: 0;
+  }
 }
 
 @keyframes openContainer {
@@ -148,14 +177,5 @@
   }
   100% {
     transform: scaleY(1);
-  }
-}
-
-@keyframes closeContainer {
-  0% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0);
   }
 }

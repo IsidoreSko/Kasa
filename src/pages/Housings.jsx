@@ -36,9 +36,7 @@ function Housings() {
                 <div className="tags-container">
                   <Tags tag={housing.tags} className="tag" />
                 </div>
-                {/* <div> */}
                 <Rating rating={housing.rating} />
-                {/* </div> */}
               </div>
               <div className="collapse-housing collapse">
                 <Collapses

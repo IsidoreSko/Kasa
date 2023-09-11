@@ -8,12 +8,12 @@ function Carousel({ slides, slidesId }) {
   const length = slides.length;
   const [slideVu, setSlideVu] = useState(0);
 
-  const previous = () => {
+  const previousSlide = () => {
     const index = slideVu > 0 ? slideVu - 1 : length - 1;
     setSlideVu(index);
   };
 
-  const next = () => {
+  const nextSlide = () => {
     const index = slideVu < length - 1 ? slideVu + 1 : 0;
     setSlideVu(index);
   };
@@ -21,9 +21,14 @@ function Carousel({ slides, slidesId }) {
   return (
     <div className="carousel-container">
       <div className="carousel">
-        <div className="carousel-picture">
+        <div className="carousel-picture ">
           {slides.map((index) => (
-            <img key={index} src={slides[slideVu]} alt={slidesId}></img>
+            <img
+              key={index}
+              src={slides[slideVu]}
+              alt={slidesId}
+              className="pictureAppears"
+            ></img>
           ))}
         </div>
         {length > 1 && (
@@ -31,14 +36,14 @@ function Carousel({ slides, slidesId }) {
             <img
               src={arrowRight}
               alt="Suivante"
-              className="arrowRight"
-              onClick={next}
+              className="arrowRight "
+              onClick={nextSlide}
             />
             <img
               src={arrowLeft}
               alt="Précédente"
               className="arrowLeft"
-              onClick={previous}
+              onClick={previousSlide}
             />
             <div className="counter">
               {slideVu + 1}/{length}

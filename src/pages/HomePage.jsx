@@ -3,8 +3,20 @@ import imgBannerHomePage from "../assets/images/imgBannerHomePage.png";
 import dataHousings from "../assets/data/housingListings.json";
 import Card from "../components/Card";
 import Banner from "../components/Banner";
+// import { useEffect, useState } from "react";
 
 function HomePage() {
+  // const [dataHousings, setDataHousings] = useState([]);
+  // useEffect(() => {
+  //   fetch("../public/data/housingListings.json")
+  //     .then((response) => response.json())
+  //     .then((data) => setDataHousings(data))
+  //     .catch((error) => {
+  //       console.error("Fetch error:", error);
+  //       console.error("Fetch error:", error);
+  //     });
+  // }, []);
+
   return (
     <div>
       <Banner

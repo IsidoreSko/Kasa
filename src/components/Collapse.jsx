@@ -21,36 +21,17 @@ function Collapses({ content, title }) {
       </div>
 
       {show && (
-        <div
-          className={`collapse-text-container ${
-            show ? "open-collapse" : "close-collapse"
-          }  ${!show ? "close-collapse" : "open-collapse"}`}
-          // className="collapse-text-container open-collapse"
-        >
-          <p className={"collapse-text "}>{content}</p>
+        <div className="collapse-text-container open-collapse">
+          <p className="collapse-text open-collapse">{content}</p>
+        </div>
+      )}
+      {!show && (
+        <div className="collapse-text-container close-collapse">
+          <p className="collapse-text close-collapse">{content}</p>
         </div>
       )}
     </div>
   );
 }
-
-// if (show) {
-
-//     <div
-//       className={"collapse-text-container open-collapse"
-//       }
-//
-//     >
-//       <p className={"collapse-text "}>{content}</p>
-//     </div>
-//   }
-//   else {
-// <div
-//       className={"collapse-text-container close-collapse"}
-
-//     >
-//       <p className={"collapse-text "}>{content}</p>
-//     </div>
-//   }
 
 export default Collapses;
