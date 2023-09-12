@@ -6,7 +6,7 @@ function Error() {
   return (
     <div className="error-content">
       <div className="error404">
-        <img src={error404} alt="aaa"></img>
+        <img src={error404} alt="Erreur 404"></img>
       </div>
       <p className="error-message">
         Oups! La page que vous demandez n'existe pas.

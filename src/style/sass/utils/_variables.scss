@@ -1,16 +1,16 @@
+// Couleur principale du site:
+$color-red: #ff6060;
 
-$color-red: #FF6060;
-
-
+// Police principale du site:
 @mixin font-family {
-    font-family: "Monserrat", sans-serif;
-    font-weight: 500;
+  font-family: "Monserrat", sans-serif;
+  font-weight: 500;
 }
 
-
+// Mixin pour centrer les élémenets:
 @mixin img-text-center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 // import { useEffect, useState } from "react";
 
 function HomePage() {
+  // Mèthode fetch pour récupérer les donnèes:::::::::::::::::::::::::::::::::::::::
   // const [dataHousings, setDataHousings] = useState([]);
   // useEffect(() => {
   //   fetch("../public/data/housingListings.json")

@@ -67,7 +67,7 @@
   & .counter {
     position: absolute;
     right: 48%;
-    top: 80%;
+    top: 480px;
     width: 24px;
     height: 32px;
     @include font-family;
@@ -83,7 +83,7 @@
 // Annimation pour l'apparition du carrousel:::::::::::::::::::::::::::::::::::::::::::
 
 .pictureAppears {
-  animation: pictureAppears 1s ease-in-out;
+  animation: pictureAppears 1.3s ease-in-out;
   transform-origin: left;
 }
 

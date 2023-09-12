@@ -30,16 +30,15 @@
   nav {
     display: flex;
     flex-direction: row;
-    gap: 57px;
-    width: 30%;
-    @media (max-width: 1024px) {
+    gap: 49%;
+    width: 400px;
+    @media (max-width: 770px) {
       width: 50%;
     }
-    @media (max-width: 770px) {
-      width: 290px;
-      gap: 15%;
+    @media (max-width: 680px) {
+      gap: 22%;
     }
-    @media (max-width: 415px) {
+    @media (max-width: 450px) {
       gap: 1%;
       width: 49%;
     }
@@ -53,8 +52,9 @@
         text-decoration: underline;
       }
       @media (max-width: 770px) {
-        font-size: 18px;
+        font-size: 15px;
         width: 95px;
+        text-transform: uppercase;
       }
       @media (max-width: 450px) {
         font-size: 13px;

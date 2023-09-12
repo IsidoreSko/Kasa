@@ -1,3 +1,4 @@
+// Composants:
 @import "./components/footer";
 @import "./components/header";
 @import "./components/card";
@@ -5,9 +6,10 @@
 @import "./components/carousel";
 @import "./components/banner";
 
+// Pages:
 @import "./layout/homePage";
-@import "./layout/about";
 @import "./layout/error";
 @import "./layout/housings";
 
+// Variables et mixins:
 @import "./utils/variables";

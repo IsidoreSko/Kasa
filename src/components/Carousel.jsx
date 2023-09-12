@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-
 import arrowRight from "../assets/images/arrow-forward.png";
 import arrowLeft from "../assets/images/arrow-back.png";
 
