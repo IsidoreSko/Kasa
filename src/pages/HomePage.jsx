@@ -9,7 +9,7 @@ function HomePage() {
   // Mèthode fetch pour récupérer les donnèes:::::::::::::::::::::::::::::::::::::::
   // const [dataHousings, setDataHousings] = useState([]);
   // useEffect(() => {
-  //   fetch("../public/data/housingListings.json")
+  //   fetch("../assets/data/housingListings.json")
   //     .then((response) => response.json())
   //     .then((data) => setDataHousings(data))
   //     .catch((error) => {

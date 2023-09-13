@@ -5,11 +5,15 @@ import { useState } from "react";
 function Collapses({ content, title }) {
   const [show, setShow] = useState(false);
 
+  function toggleCollapse() {
+    setShow(!show);
+  }
+
   return (
     <div key={title} className="collapse">
       <div className="not-open not-open-housing">
         <h2 className="collapse-title">{title}</h2>
-        <div onClick={() => setShow(!show)}>
+        <div onClick={() => toggleCollapse()}>
           <img
             src={arrowBack}
             alt="Icone flèche vers le haut"
@@ -19,15 +23,13 @@ function Collapses({ content, title }) {
           />
         </div>
       </div>
-      {!show ? (
-        <div className="collapse-text-container close-collapse">
-          <p className={"collapse-text close-collapse"}>{content}</p>
-        </div>
-      ) : (
-        <div className="collapse-text-container open-collapse">
-          <p className={"collapse-text open-collapse"}>{content}</p>
-        </div>
-      )}
+      <div
+        className={` collapse-text-container ${
+          show ? "open-collapse" : "close-collapse"
+        } `}
+      >
+        <p className={` collapse-text `}>{content}</p>
+      </div>
     </div>
   );
 }
