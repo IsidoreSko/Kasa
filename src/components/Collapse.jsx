@@ -23,6 +23,7 @@ function Collapses({ content, title }) {
           />
         </div>
       </div>
+
       <div
         className={` collapse-text-container ${
           show ? "open-collapse" : "close-collapse"
